@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 
-const sequalize = require("../config/connection");
+const sequelize = require("../config/connection");
 
 class Tag extends Model {}
 
@@ -17,7 +17,7 @@ Tag.init(
         },
     },
     {
-        sequalize,
+        sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
